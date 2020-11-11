@@ -1,0 +1,78 @@
+.header {
+    background-size: cover;
+    background-color: #000000;
+    color: #ffffff;
+    height: 44px;
+    width: 100%;
+    display: flex;
+    padding: 0 10px;
+    font-size: 15px;
+    font-weight: 700;
+
+    .layout {
+        width: 1180px;
+        display: block;
+    }
+
+    .navbar {
+        display: flex;
+        position: relative;
+        padding: 0;
+        width: 100%;
+
+      &-connection {
+        display: none;
+        position: relative;
+        margin-left: auto;
+
+        &.on {
+            display: flex;
+
+            @media (max-width: 768px) {
+                position: absolute;
+                right: 0;
+                top: 10px;
+            }
+        }
+
+        label {
+            right: 50px;
+            top: 2px;
+            font-size: 10px;
+            position: relative;
+        }
+
+        .spinner {
+            top: 2px;
+            left: 10px;
+
+            .spinner-inner {
+                border-color: green;
+                border-top-color: transparent;
+            }
+        }
+      }
+    }
+
+    .navbar-brand {
+        text-align: left;
+        padding-right: 40px;
+
+      .logo {
+          font-size: 24px;
+          line-height: 34px;
+          font-weight: 700;
+      }
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+        padding: 0 15px;
+        color: #ffffff;
+        cursor: pointer;
+    }
+
+    .nav-menu {
+        display: inline-block;
+        position: relative;
+    }
+}
